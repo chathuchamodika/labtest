@@ -1,8 +1,3 @@
-/*
-Student ID: IT24103832
-Name: Chamodika J.W.C
-*/
-
 $(document).ready(function() {
 
     // TASK 1 - Page Load & Document Properties
@@ -40,13 +35,14 @@ $(document).ready(function() {
     });
 
     // TASK 5 - Image Preloading & Replacement
-    let img1 = "images\library1.jpg";
-    let img2 = "images\library2.jpg";
+    let img1 = "images/library1.jpg";
+    let img2 = "images/library2.jpg";
     let current = img1;
 
-    $("#libraryImage").on("dblclick", function() {
-        current = (current === img1) ? img2 : img1;
-        $(this).attr("src", current);
+    $("#libraryImage").on("click", function() {
+    current = (current === img1) ? img2 : img1;
+    $(this).attr("src", current);
+
     });
 
     // TASK 6 - Form Handling & Dynamic Table
